@@ -1,0 +1,143 @@
+@import "config.sass"
+    
+h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, ul, ol
+    color: $black!important
+
+body
+    background: $white!important
+
+.btn
+    background-color: $pink!important
+    color: $white!important
+    &:hover
+        box-shadow: $shadow-btn
+
+.btn.btn-second
+    background-color: $white!important
+    color: $black!important
+    &:hover
+        box-shadow: $shadow-btn
+    
+header
+    .navbar
+        .nav-item
+            .nav-link
+                color: $black
+                &:hover
+                    color: $pink!important
+                &::before
+                    border-bottom: $border-link
+        .social-icon
+            svg
+                fill: $black
+                &:hover
+                    fill: $pink
+
+.about
+    .accordion
+        .accordion-item
+            background-color: $pink
+            .accordion-button
+                background-color: $pink
+                color: $white
+                &:not(.collapsed)
+                    color: $white!important
+                &::after
+                    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10' fill='none'%3e%3cg clip-path='url(%23clip0_38_71)'%3e%3cpath d='M13.8601 1.66571L13.1588 0.944182C13.0653 0.847829 12.9577 0.799805 12.8359 0.799805C12.7145 0.799805 12.6069 0.847829 12.5135 0.944182L7.00007 6.61629L1.48692 0.944333C1.39342 0.847981 1.28582 0.799956 1.16426 0.799956C1.04265 0.799956 0.93504 0.847981 0.841585 0.944333L0.14033 1.66591C0.0466783 1.76207 0 1.87277 0 1.99789C0 2.12291 0.0468257 2.23362 0.14033 2.32977L6.6774 9.05553C6.77086 9.15173 6.87851 9.19981 7.00007 9.19981C7.12163 9.19981 7.22909 9.15173 7.3225 9.05553L13.8601 2.32977C13.9536 2.23357 14 2.12286 14 1.99789C14 1.87277 13.9536 1.76207 13.8601 1.66571Z' fill='#{$white-arrow}'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_38_71'%3e%3crect width='14' height='8.4'  transform='translate(0 0.799805)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e") !important
+                h3
+                    color: $white!important
+                svg
+                    fill: $white
+            .accordion-body
+                p
+                    color: $white!important
+
+.advantages
+    .owl-carousel
+        .thumbnail
+            .img-link
+                .title-block
+                    svg
+                        fill: $white
+                    h3
+                        color: $white!important
+
+.course, .learning
+    .card
+        background: $pink
+        .card-header
+            background-color: transparent
+            .title
+                h3
+                    color: $white!important
+            .card-icon
+                svg
+                    fill: $white
+        .card-body
+            .description
+                .item-description
+                    svg
+                        fill: $white
+                    .text
+                        p
+                            color: $white!important
+        .card-footer
+            background-color: transparent
+            h3
+                color: $white!important
+            .item-description
+                svg
+                    fill: $white
+                a
+                    color: $white
+        &:hover
+            box-shadow: $shadow
+
+.lease
+    .img-lease
+        .title
+            h2
+                color: $white!important
+        .linear
+            background: $black-img
+    .toast-container
+        .toast
+            background-color: $white!important
+            box-shadow: $shadow-toast
+            .toast-body
+                .toast-item
+                    svg
+                        fill: $pink
+        
+.certificates 
+    a
+        color: $pink!important
+
+footer
+    background-color: $black
+    .navbar
+        p
+            color: $white!important
+    .list-group-item
+        background: $black!important
+        .nav-link
+            color: $white!important
+            &:hover
+                color: $pink!important
+            &::before
+                border-bottom: $border-link
+    .contact
+        .contact-item
+            p
+                color: $white!important
+            svg 
+                fill: $white
+                &:hover
+                    fill: $pink
+            a
+                color: $white!important
+    .copyright
+        p
+            color: $white!important
+            a
+                color: $pink!important
